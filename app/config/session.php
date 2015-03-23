@@ -14,6 +14,11 @@ return array(
 	| Supported: "file", "cookie", "database", "apc",
 	|            "memcached", "redis", "array"
 	|
+	| OpenShift Notes:
+	|   APC: http://docs.openshift.org/origin-m4/oo_cartridge_guide.html#environment-variables-9
+	|   Memcached: https://developers.openshift.com/en/marketplace-memcachedcloud.html
+	|   Redis: https://developers.openshift.com/en/marketplace-rediscloud.html
+	|
 	*/
 
 	'driver' => 'file',

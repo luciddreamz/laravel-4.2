@@ -13,6 +13,11 @@ return array(
 	|
 	| Supported: "sync", "beanstalkd", "sqs", "iron", "redis"
 	|
+	| OpenShift Notes:
+	|   IronMQ: https://developers.openshift.com/en/marketplace-ironmq.html
+	|   IronWorker: https://developers.openshift.com/en/marketplace-ironworker.html
+	|   Redis Cloud: https://developers.openshift.com/en/marketplace-redis-cloud.html
+	|
 	*/
 
 	'default' => 'sync',

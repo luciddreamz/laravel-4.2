@@ -13,6 +13,9 @@ return array(
 	|
 	| Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "log"
 	|
+	| OpenShift Recommended:
+	|   SendGrid: https://developers.openshift.com/en/marketplace-sendgrid.html#php-laravel
+	|
 	*/
 
 	'driver' => 'smtp',

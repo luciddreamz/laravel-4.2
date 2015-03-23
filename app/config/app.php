@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => getenv('APPLICATION_ENV') == 'development' ? true : false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'https://' . getenv('OPENSHIFT_APP_DNS') . '/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -74,11 +74,11 @@ return array(
 	|
 	| This key is used by the Illuminate encrypter service and should be set
 	| to a random, 32 character string, otherwise these encrypted strings
-	| will not be safe. Please do this before deploying an application!
+	| will not be safe.
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => substr(getenv('OPENSHIFT_SECRET_KEY'), 0, 31),
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
