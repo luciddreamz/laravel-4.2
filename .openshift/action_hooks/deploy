@@ -29,5 +29,5 @@ echo
 echo "Running 'php artisan migrate --force'..."
 echo 
 pushd ${OPENSHIFT_REPO_DIR} > /dev/null
-echo "php artisan migrate --force"
+php artisan migrate --force
 popd > /dev/null
